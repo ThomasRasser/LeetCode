@@ -1,12 +1,17 @@
-// URLs and other information
-/* ------------------------------------------------------------ */
+// #region URLs and other information
+/*------------------------------------------------------------*/
+
 // Online article:
 // https://codingforspeed.com/how-many-ones-between-number-1-to-n/
 
 // Online solution:
 // https://leetcode.com/problems/number-of-digit-one/discuss/64382/JavaPython-one-pass-solution-easy-to-understand
 
-/* ------------------------------------------------------------ */
+/*------------------------------------------------------------*/
+// #endregion
+
+// #region Main code
+/*------------------------------------------------------------*/
 
 // Counts the number of ones in a number
 // Example: number_of_ones(12) -> 5
@@ -77,8 +82,12 @@ function number_of_ones_iterative(n) {
   return cnt_array_sum;
 }
 
-/* Testing */
-/* ------------------------------------------------------------ */
+/*------------------------------------------------------------*/
+// #endregion
+
+// #region Testing
+/*------------------------------------------------------------*/
+
 function testing() {
   let error_cnt = 0;
   for(let i = 0; i < 12345; i++) {
@@ -96,8 +105,12 @@ function testing() {
 }
 //testing();
 
-/* Benchmarking */
-/* ------------------------------------------------------------ */
+/*------------------------------------------------------------*/
+// #endregion
+
+// #region Benchmarking
+/*------------------------------------------------------------*/
+
 function benchmark(max_magnitude) {
   console.log("\nBenchmark against simple approach\n");
   
@@ -122,3 +135,6 @@ function benchmark(max_magnitude) {
   }
 }
 //benchmark(1000000);
+
+/*------------------------------------------------------------*/
+// #endregion
